@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Jost:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+body{
+  margin: 0;
+  min-height: 100vh;
+  font-family: "Jost", sans-serif;
+  font-weight: 400;
+  color: #292f36;
+  background-color: white;
+
+}
+
+a{
+  text-decoration:none;
+  
+}
+/*MAIN COLOR*/
+.primary-background {
+  background-color: #0c70f2;
+}
+
+.primary-color {
+  background-color: #0c70f2;
+}
+
+.secondary-background {
+  background-color: #1d1d1d;
+}
+
+.secondary-color{
+  background-color: #1d1d1d;
+}
+
+.tertiary-background {
+  background-color: #c0bfbf;
+}
+
+.tertiary-color{
+  background-color: #f6f6f6;
+}
+
+.grey-1-color {
+  color: #4d5053;
+}
+
+/*TYPOGRAPHY*/
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "DM Serif Display", serif;
+  font-size: inherit;
+  padding: 0;
+  letter-spacing: 2.5px;
+}
+
+p {
+  line-height: 150%;
+
+}
+
+.text-center {
+  text-align: center;
+}
+
+/*GRID*/
+
+.container {
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1140px;
+  padding: 0 30px;
+  box-sizing: border-box;
+}
+
+.al-center {
+  align-items: center;
+}
+
+.al-end {
+  align-items: end;
+}
+
+.d-flex{
+  display: flex;
+}
+
+.fd-column {
+  flex-direction: column;
+}
+
+.jc-center{
+  justify-content: center;
+}
+
+.jc-end {
+  justify-content: end;
+}
+
+.jc-space-between{
+  justify-content: space-between;
+}
+
+@media(max-width: 768px){
+  .container{
+    width: 90%;
+  }
+  .mobile-fd-column{
+    flex-direction: column;
+  }
+}

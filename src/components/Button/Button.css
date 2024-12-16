@@ -1,0 +1,59 @@
+.button {
+    border-radius: 18px;
+    border: none;
+    column-gap: 10px;
+    cursor: pointer;
+    display: flex;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 25px 50px;
+    transition: background-colo 0.3s ease;
+
+}
+
+/* cores primary */
+
+.button.primary {
+    background-color: #0c70f2;
+    color: white;
+}
+
+.button.primary:hover {
+    background-color: #0056b3;
+    
+}
+
+/* cor secondary */
+
+
+.button.secondary {
+    background-color: #1d1d1d;
+    color: white;
+}
+
+.button.secondary:hover {
+    background-color: #4d5953;
+    
+}
+
+/* cor outline */
+
+
+.button.outline {
+    background-color: white;
+    color: #0c70f2;
+}
+
+.button.outline:hover {
+    background-color: #0c70f2;
+    color: white;
+}
+
+/* botao criado disabled*/
+.button:disabled, .button:disabled :hover{
+    background-color: #ccc;
+    color: #666;
+    pointer-events: none;
+
+}
+
