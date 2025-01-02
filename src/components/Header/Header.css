@@ -8,10 +8,15 @@ header ul, li {
     margin: 0;
     padding: 0;
 }
+.mobile-menu {
+    display: none;
+
+}
  
 nav {
     display: flex;
 }
+
 
 nav a {
     color: #1d1d1d;
@@ -23,11 +28,7 @@ nav a {
 nav a:hover {
     color: #0c70f2;
 }
-.mobile-menu {
-    display: none;
-  
 
-}
 
 @media (max-width: 768px) {
     nav.open {
