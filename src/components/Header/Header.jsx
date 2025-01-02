@@ -11,10 +11,11 @@ import './Header.css'
 import Logo from "../../assets/dnc-logo-2.svg"
 
 function Header () {
-    const [isOpen, setIsOpen] = useState(false)
+    const [isOpen , setIsOpen] = useState(false)
     const toggleMenu = () => {
-        setIsOpen (!isOpen)
+        setIsOpen(!isOpen)
     }
+    
     // tem que cria um bottum para fecha mobile que nao esta dando certo no  
     // <nav className={`${isOpen ? 'open' : ''}`}> abiaco delel   //
     return(
@@ -22,14 +23,16 @@ function Header () {
             <div className="container">
                 <div className="al-center d-flex jc-space-between">
                     <Link to="/"><img src={Logo} /></Link>
-                    <div className="mobile-menu">
-                        <Button buttonStyle="secondary" onClick={toggleMenu}>
+                   <div className="mobile-menu">
+                        <button buttonStyle= "secondary" onClick={toggleMenu}>
                             Menu
-                        </Button>
+                        </button>
                     </div> 
                                  
-                    <nav className={`${isOpen ? 'open' : ''}`}>
-                 
+                    <nav className ={`${isOpen ? 'open' : ''}`}>
+                    <button buttonStyle="unstyled" className='mobile-menu close-btn' onClick={toggleMenu}>
+                        x
+                    </button>
                     <ul className="d-flex">
                         <li><Link to="/">Home</Link></li>
                         <li><Link to="/About">About</Link></li>
